@@ -1,32 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Profile</title>
     <link rel="icon" type="image/x-icon" href="images/logosmall.png">
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div class="row">
-            <div class="col-md-2 side-bar">
-                <ul>
-                    <li><h2>Business Name</h2></li>
-                    <li>Dashboard</li>
-                    <li>Orders</li>
-                    <li>Listings</li>
-                    <li>Store Front</li>
-                    <li>Settings</li>
-                    <li>Vendora</li>
-                </ul>
-            </div>
-            <div id="content">
-                <div class="row">
-                    
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-2 side-bar">
+          <ul>
+            <li style="margin-bottom: 3rem"><h2>Business Name</h2></li>
+            <li><a href="profile.html">Dashboard</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Store Front</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="home.html">Vendora Home</a></li>
+          </ul>
         </div>
+        <div id="content" style="padding: 4rem">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+            <div class="analytics-section">
+                <h1 style="margin-bottom: 1rem; text-align: center;">Analytics Dashboard</h1>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">💰</div>
+                      <h4>$12,340</h4>
+                      <p>Total Sales Today</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">👀</div>
+                      <h4>1,234</h4>
+                      <p>Storefront Visits</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">📦</div>
+                      <h4>Product A</h4>
+                      <p>Most Popular Product</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">🆕</div>
+                      <h4>123</h4>
+                      <p>New Customers Today</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">📈</div>
+                      <h4>12%</h4>
+                      <p>Sales Growth Today</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">📦</div>
+                      <h4>567</h4>
+                      <p>Total Orders Today</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">🛒</div>
+                      <h4>45</h4>
+                      <p>Products In Carts</p>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <div class="analytic-card">
+                      <div class="icon">💸</div>
+                      <h4>$21.5</h4>
+                      <p>Average Order Value</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-md-offset-3" style="margin-top: 4rem">
+              <div class="table-container">
+                <h1 style="margin-bottom: 1rem; text-align: center;">Pending Orders</h1>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Customer Name</th>
+                      <th>Product</th>
+                      <th>Quantity</th>
+                      <th>Order Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>101</td>
+                      <td>Esta Blish</td>
+                      <td>Product A</td>
+                      <td>3</td>
+                      <td>2024-11-05</td>
+                    </tr>
+                    <tr>
+                      <td>102</td>
+                      <td>Su Li</td>
+                      <td>Product B</td>
+                      <td>2</td>
+                      <td>2024-11-04</td>
+                    </tr>
+                    <tr>
+                      <td>103</td>
+                      <td>John2</td>
+                      <td>Product C</td>
+                      <td>5</td>
+                      <td>2024-11-03</td>
+                    </tr>
+                    <tr>
+                      <td>104</td>
+                      <td>Dave Darrel Dragovic</td>
+                      <td>Product D</td>
+                      <td>1</td>
+                      <td>2024-11-02</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-md-offset-3" style="margin-top: 4rem">
+                <div class="listing-section">
+                    <div class="listing-header">
+                      <h3>Product Listings</h3>
+                    </div>
+              
+                    <!-- Listing 1 -->
+                    <div class="listing-card">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Product A</h5>
+                          <p><strong>Price:</strong> $29.99</p>
+                          <p><strong>Category:</strong> Electronics</p>
+                          <p><strong>Status:</strong> In Stock</p>
+                        </div>
+                        <div class="col-md-4 action-buttons">
+                          <button class="btn btn-primary">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Listing 2 -->
+                    <div class="listing-card">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Product B</h5>
+                          <p><strong>Price:</strong> $99.99</p>
+                          <p><strong>Category:</strong> Furniture</p>
+                          <p><strong>Status:</strong> Out of Stock</p>
+                        </div>
+                        <div class="col-md-4 action-buttons">
+                          <button class="btn btn-primary">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Listing 3 -->
+                    <div class="listing-card">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Product C</h5>
+                          <p><strong>Price:</strong> $49.99</p>
+                          <p><strong>Category:</strong> Clothing</p>
+                          <p><strong>Status:</strong> In Stock</p>
+                        </div>
+                        <div class="col-md-4 action-buttons">
+                          <button class="btn btn-primary">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Listing 4 -->
+                    <div class="listing-card">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Product D</h5>
+                          <p><strong>Price:</strong> $15.99</p>
+                          <p><strong>Category:</strong> Home Appliances</p>
+                          <p><strong>Status:</strong> In Stock</p>
+                        </div>
+                        <div class="col-md-4 action-buttons">
+                          <button class="btn btn-primary">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+            </div>
+            <div class="col-md-3" style="margin-top: 4rem">
+              <div class="review-section">
+                <h1 style="margin-bottom: 1rem; text-align: center;">Customer Reviews</h1>
+
+                <div class="review-card">
+                  <div class="d-flex justify-content-between">
+                    <div class="reviewer-name">Dave Darrel Dragovic</div>
+                    <div class="rating">★★★★☆</div>
+                  </div>
+                  <div class="review-text">
+                    <p>
+                      Great product. I really liked the quality and the fast
+                      delivery.
+                    </p>
+                  </div>
+                  <div class="date">
+                    <small>Reviewed on: 2024-11-05</small>
+                  </div>
+                </div>
+
+                <div class="review-card">
+                  <div class="d-flex justify-content-between">
+                    <div class="reviewer-name">John2</div>
+                    <div class="rating">★★★☆☆</div>
+                  </div>
+                  <div class="review-text">
+                    <p>
+                      The product was good, but there were a few scratches. Overall, I am satisfied with my purchase.
+                    </p>
+                  </div>
+                  <div class="date">
+                    <small>Reviewed on: 2024-11-04</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
