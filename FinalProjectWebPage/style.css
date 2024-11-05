@@ -1,0 +1,39 @@
+#container {width:100%; height:100%;}
+#navbar {width:100%;height:84px}
+#content {width: 100%; color:white;}
+#footer {width:100%; height: 100px; background-color: #000000;}
+#banner {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/banner.jpg); background-size: cover; background-attachment: fixed;color:white;}
+#bannerstrat {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(images/stratbanner.jpeg); background-size: cover; background-attachment: fixed;color:white;}
+#bannersignUp {width:100%; color:white; position: relative;}
+#bannerAbout {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/aboutusbanner.jpeg); background-size: cover; background-attachment: fixed;color:white;}
+#footer {width: 100%; height:20%;  background-image: linear-gradient(rgb(54, 54, 54), black); color:white;}
+p.menu {text-align:center; float: left; margin-top: 20px; margin-left: 20%;}
+#imgbox {border:1px solid red;}
+#staffbox{border: 2px solid transparent; background-color: white; width: 500px;border-radius: 20px; float:left; margin-left: 5%; margin-top: 2%;}
+#staffboxctr{border: 2px solid transparent; background-color: white; width: 500px;border-radius: 20px; float:left; margin-left: 5%; margin-top: 2%;}
+#headImg {margin:5px; float:left;}
+a:link, a:visited {color:rgb(0, 0, 0);padding: 5px 20px;text-align: center;text-decoration: none;display: inline-block;}
+a:hover {color:#f38a28;} 
+a.active { color:#f38a28;}
+a.SUactive{color:#f38a28; border: 2px solid rgb(0, 0, 0);background-color: rgb(0, 0, 0); border-bottom: none; border-top-left-radius: 10px; border-top-right-radius: 10px;margin-left:20px}
+#line {border-top: 2px solid black;}
+a.inactive {margin-left: 20px}
+#SUcontent {width: 100%; color:white;}
+#SUform{padding: 20px; border:2px solid black; width:90%;border-radius: 20px; margin: auto; margin-top: 50px; color:black}
+input[type=text],[type=tel],[type=email],[type=password]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color:rgb(233, 233, 233)
+  }
