@@ -314,10 +314,6 @@ tr:nth-child(even) {
   border-radius: 8px;
 }
 
-.listing-header {
-  margin-bottom: 15px;
-}
-
 .listing-card {
   background-color: white;
   border: 1px solid #ddd;
