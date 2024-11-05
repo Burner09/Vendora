@@ -1,26 +1,182 @@
-#container {width:100%; height:100%;}
-#navbar {width:100%;height:84px}
-#content {width: 100%; color:white;}
-#footer {width:100%; height: 100px; background-color: #000000;}
-#banner {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/banner.jpg); background-size: cover; background-attachment: fixed;color:white;}
-#bannerstrat {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(images/stratbanner.jpeg); background-size: cover; background-attachment: fixed;color:white;}
-#bannersignUp {width:100%; color:white; position: relative;}
-#bannerAbout {width:100%; height:80%; background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/aboutusbanner.jpeg); background-size: cover; background-attachment: fixed;color:white;}
-#footer {width: 100%; height:20%;  background-image: linear-gradient(rgb(54, 54, 54), black); color:white;}
-p.menu {text-align:center; float: left; margin-top: 20px; margin-left: 20%;}
-#imgbox {border:1px solid red;}
-#staffbox{border: 2px solid transparent; background-color: white; width: 500px;border-radius: 20px; float:left; margin-left: 5%; margin-top: 2%;}
-#staffboxctr{border: 2px solid transparent; background-color: white; width: 500px;border-radius: 20px; float:left; margin-left: 5%; margin-top: 2%;}
-#headImg {margin:5px; float:left;}
-a:link, a:visited {color:rgb(0, 0, 0);padding: 5px 20px;text-align: center;text-decoration: none;display: inline-block;}
-a:hover {color:#f38a28;} 
-a.active { color:#f38a28;}
-a.SUactive{color:#f38a28; border: 2px solid rgb(0, 0, 0);background-color: rgb(0, 0, 0); border-bottom: none; border-top-left-radius: 10px; border-top-right-radius: 10px;margin-left:20px}
-#line {border-top: 2px solid black;}
-a.inactive {margin-left: 20px}
-#SUcontent {width: 100%; color:white;}
-#SUform{padding: 20px; border:2px solid black; width:90%;border-radius: 20px; margin: auto; margin-top: 50px; color:black}
-input[type=text],[type=tel],[type=email],[type=password]{
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  color: black;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 { width: 8.33333%; }
+  .col-md-2 { width: 16.66667%; }
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33333%; }
+  .col-md-5 { width: 41.66667%; }
+  .col-md-6 { width: 50%; }
+  .col-md-7 { width: 58.33333%; }
+  .col-md-8 { width: 66.66667%; }
+  .col-md-9 { width: 75%; }
+  .col-md-10 { width: 83.33333%; }
+  .col-md-11 { width: 91.66667%; }
+  .col-md-12 { width: 100%; }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-1 { margin-left: 8.33333%; }
+  .col-md-offset-2 { margin-left: 16.66667%; }
+  .col-md-offset-3 { margin-left: 25%; }
+  .col-md-offset-4 { margin-left: 33.33333%; }
+  .col-md-offset-5 { margin-left: 41.66667%; }
+  .col-md-offset-6 { margin-left: 50%; }
+  .col-md-offset-7 { margin-left: 58.33333%; }
+  .col-md-offset-8 { margin-left: 66.66667%; }
+  .col-md-offset-9 { margin-left: 75%; }
+  .col-md-offset-10 { margin-left: 83.33333%; }
+  .col-md-offset-11 { margin-left: 91.66667%; }
+}
+
+
+#container {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+#navbar {
+  height: 84px;
+}
+#content {
+  width: 100%;
+  color: white;
+}
+
+div.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.menu a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#banner {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(images/banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#bannerstrat {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+    url(images/stratbanner.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+#bannersignUp {
+  width: 100%;
+  color: white;
+  position: relative;
+}
+#bannerAbout {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(images/aboutusbanner.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+#footer {
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(rgb(54, 54, 54), black);
+  color: white;
+}
+#imgbox {
+  border: 1px solid red;
+}
+#staffbox {
+  border: 2px solid transparent;
+  background-color: white;
+  width: 500px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+#staffboxctr {
+  border: 2px solid transparent;
+  background-color: white;
+  width: 500px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+a:link,
+a:visited {
+  color: rgb(0, 0, 0);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  color: #f38a28;
+}
+a.active {
+  color: #f38a28;
+}
+a.SUactive {
+  color: #f38a28;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 20px;
+}
+#line {
+  border-top: 2px solid black;
+}
+a.inactive {
+  margin-left: 20px;
+}
+#SUcontent {
+  width: 100%;
+  color: white;
+}
+#SUform {
+  padding: 20px;
+  border: 2px solid black;
+  width: 90%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  color: black;
+}
+input[type="text"],
+[type="tel"],
+[type="email"],
+[type="password"] {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -30,10 +186,72 @@ input[type=text],[type=tel],[type=email],[type=password]{
   box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin:0;
-    padding:0;
-    background-color:rgb(233, 233, 233)
-  }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+ul.home-sub-menu {
+  list-style: none;
+  font-size: 1.75rem;
+  text-decoration: underline;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding-bottom: .5rem;
+  border-bottom: grey 2px solid;
+}
+
+div.listing-container {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* business profile */
+div.business-head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+div.side-bar {
+  position: absolute;
+  border-right: black 2px solid;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+div.side-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
