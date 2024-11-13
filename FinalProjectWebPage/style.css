@@ -32,6 +32,14 @@ a:visited {
   display: inline-block;
 }
 
+a.footer{
+  color: rgb(0, 0, 0);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 a:hover,
 a.active,
 a.SUactive {
@@ -157,11 +165,37 @@ ul.home-sub-menu {
   background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/aboutusbanner.jpeg);
 }
 
+#AbtBox{
+  color:black;
+  font-size:20px;
+  margin-left:100px;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap:20px;
+}
+
+#AbtBoxR{
+  color:black;
+  font-size:20px;
+  margin-right:100px;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap:20px;
+}
+
 #footer {
   width: 100%;
-  height: 20%;
-  background-image: linear-gradient(rgb(54, 54, 54), black);
-  color: white;
+
+  display: flex; 
+  justify-content: space-around; 
+  padding: 20px; 
+  background-color: #afaeae;
+}
+
+#cUbox{
+display:flex;
 }
 
 #SUform {
@@ -172,6 +206,40 @@ ul.home-sub-menu {
   margin: auto;
   margin-top: 50px;
   color: black;
+}
+
+#CUform {
+  padding: 20px;
+  border: 2px solid black;
+  width: 50%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  color: black;
+  background-color: #cccccc;
+}
+
+input[type=submit]  {
+  background-color: #000000;
+  margin-left: 20px;
+  color: #f38a28;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+
+input[type="reset"]{
+  background-color: #a7a7a7;
+  margin-left: 20px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
 }
 
 input[type="text"],
@@ -193,13 +261,26 @@ input[type="text"],
 
 #staffbox,
 #staffboxctr {
-  border: 2px solid transparent;
+  border: 2px solid rgb(214, 169, 169);
   background-color: white;
   width: 500px;
   border-radius: 20px;
-  float: left;
   margin-left: 5%;
   margin-top: 2%;
+  color:black;
+  display:flex;
+}
+
+#abtRow{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.staffdetails{
+color:black;
+margin-left: 5px;
+
 }
 
 div.listing-container {
