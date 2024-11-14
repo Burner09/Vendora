@@ -60,6 +60,18 @@ a.SUactive {
   margin-left: 20px;
 }
 
+a.nothing {
+  padding: 0px 0px;
+}
+
+.searchbtn{
+
+  border:1px solid black;
+  height: 40px;
+  width: 40px;
+  margin-left: 0;
+}
+
 a.inactive {
   margin-left: 20px;
 }
@@ -151,18 +163,25 @@ ul.home-sub-menu {
 
 #banner {
   background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/banner.jpg);
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 #bannerstrat {
-  height: 80%;
   background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(images/stratbanner.jpeg);
 }
 
 #bannerAbout {
-  height: 80%;
   background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/aboutusbanner.jpeg);
+}
+
+#bannercat{
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/catbanner.png);
+  background-size:cover ;
+}
+
+#trendbanner{
+  height: 8rem;
+  display:flex;
+  justify-content:center;
 }
 
 #AbtBox{
@@ -184,6 +203,8 @@ ul.home-sub-menu {
   justify-content: center;
   gap:20px;
 }
+
+
 
 #footer {
   width: 100%;
@@ -245,7 +266,8 @@ input[type="reset"]{
 input[type="text"],
 [type="tel"],
 [type="email"],
-[type="password"] {
+[type="password"]
+{
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -253,6 +275,11 @@ input[type="text"],
   border: 1px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+select{
+  width:40px;
+  height: 30px;
 }
 
 #imgbox {
@@ -277,10 +304,76 @@ input[type="text"],
   justify-content: center;
 }
 
+#searchRow{
+  display:flex;
+  flex-direction: row;
+}
+
+form.search1{
+width:100%;
+padding: 5px;
+border-bottom: 1px solid black;
+color: black;
+text-align: center;
+}
+
+.search1 input[type="submit"]{
+
+  margin-left: 0px;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float:none;
+}
+
+h3.Search{
+  width:100%;
+  text-align: center;
+  color: black;
+}
+
 .staffdetails{
 color:black;
 margin-left: 5px;
 
+}
+
+#VenRow{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  gap:30px;
+}
+
+#VenRowA{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  gap:5px;
+}
+
+#pageselect{
+
+  border: 1px solid black;
+  display:flex;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+
+
+#Vprod{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  width: 240px;
+  border-radius: 10px;
+  margin-top: 2%;
+  color:black;
+  display:flex; 
+  flex-direction: column;
+  text-align: center;
 }
 
 div.listing-container {
