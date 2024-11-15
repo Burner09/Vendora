@@ -50,6 +50,12 @@ a.active {
   color: #f38a28;
 }
 
+
+.img:hover{
+  border:1px solid #f38a28;
+
+  }
+
 a.SUactive {
   color: #f38a28;
   border: 2px solid rgb(0, 0, 0);
@@ -493,6 +499,7 @@ div.side-bar ul {
 
 
 .table-container,
+.table-container1,
 .listing-section {
   padding: 20px;
   background-color: #f8f9fa;
