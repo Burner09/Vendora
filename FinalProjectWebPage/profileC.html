@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="images/logosmall.png">
+  </head>
+  <body>
+    <div id="container">
+      <div id="navbar" class="row">
+        <div class="col-md-2">
+            <a href="home.html">
+                <img src="images/logoblk.png" alt="Business Logo" height="80"/>
+            </a>
+        </div>
+        <div class="menu col-md-8">
+            <a href="home.html">Home</a>
+            <a href="strategy.html">Strategy</a>
+            <a  href="aboutUs.html">About</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+        <div class="col-md-2">
+            <p style="margin-left: 5rem;">
+                Business/Customer <a href ="profile.html"><img class ="img" src="images/blankuser.png"  width="50" ></a>
+            </p>
+        </div>
+    </div>
+    <hr>
+      <div class="row">
+        <div class="col-md-2 side-bar">
+          <ul>
+            <li style="margin-bottom: 3rem"><h2>Welcome, Customer Name</h2></li>
+            <li><a href="profileC.html#jump3">Cart</a></li>
+            <li><a href="profileC.html#jump4">Orders</a></li>
+            <li><a href="profileC.html#jump5">Settings</a></li>
+            <li><a href="home.html">Vendora Home</a></li>
+            <li><a href="profile.html">Vendor Profile Switch</a></li>
+          </ul>
+        </div>
+        <div id="content" style="padding: 4rem">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+              <div id="jump3"></div>
+              <div class="table-container1">
+                  <h1 style="margin-bottom: 1rem; text-align: center;">Shopping Cart</h1>
+                  
+                  
+                  <table class="table table-bordered" style="margin-top: 1rem;">
+                      <thead>
+                          <tr>
+                              <th>Product</th>
+                              <th>Quantity</th>
+                              <th>Price</th>
+                              <th>Total</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Product A</td>
+                              <td>2</td>
+                              <td>$50.00</td>
+                              <td>$100.00</td>
+                          </tr>
+                          <tr>
+                              <td>Product B</td>
+                              <td>1</td>
+                              <td>$75.00</td>
+                              <td>$75.00</td>
+                          </tr>
+                          <tr>
+                              <td>Product C</td>
+                              <td>3</td>
+                              <td>$20.00</td>
+                              <td>$60.00</td>
+                          </tr>
+                      </tbody>
+                  </table>
+          
+                  <div class="cart-summary" style="margin-top: 2rem; text-align: right;">
+                      <h3>Cart Summary</h3>
+                      <p>Subtotal: $235.00</p>
+                      <p>Tax (10%): $23.50</p>
+                      <h4>Total: $258.50</h4>
+                      <button class="btn btn-primary" style="margin-top: 1rem;">Checkout</button>
+                  </div>
+              </div>
+          </div>
+          
+            <div class="col-md-8 col-md-offset-3" style="margin-top: 4rem">
+              <div id ="jump4"></div>
+              <div class="table-container">
+                <h1 style="margin-bottom: 1rem; text-align: center;">Order Tracking</h1>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Status</th>
+                            <th>Order Date</th>
+                            <th>Estimated Delivery</th>
+                            <th>Order Items</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Processing</td>
+                            <td>2024-11-05</td>
+                            <td>2024-11-10</td>
+                            <td><a href="#" class="btn btn-link">View Order</a></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Shipped</td>
+                            <td>2024-11-04</td>
+                            <td>2024-11-09</td>
+                            <td><a href="#" class="btn btn-link">View Order</a></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Delivered</td>
+                            <td>2024-11-03</td>
+                            <td>2024-11-08</td>
+                            <td><a href="#" class="btn btn-link">View Order</a></td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Processing</td>
+                            <td>2024-11-02</td>
+                            <td>2024-11-07</td>
+                            <td><a href="#" class="btn btn-link">View Order</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            </div>
+
+            <div class="col-md-8 col-md-offset-3" style="margin-top: 4rem;">
+              <div id ="jump5"></div>
+              <div class="table-container">
+                  <h1 style="margin-bottom: 1rem; text-align: center;">Profile Settings</h1>
+                  
+                  <div class="row">
+                      <div class="col-md-6">
+                          <!-- Personal Information -->
+                          <div class="settings-card">
+                              <h5>Personal Information</h5>
+                              <form>
+                                  <div class="form-group">
+                                      <label for="name">Full Name</label>
+                                      <input type="text" class="form-control" id="name" value="John Doe">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email">Email Address</label>
+                                      <input type="email" class="form-control" id="email" value="johndoe@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phone">Phone Number</label>
+                                      <input type="text" class="form-control" id="phone" value="123-456-7890">
+                                  </div>
+                                  <button class="btn btn-primary">Save Changes</button>
+                              </form>
+                          </div>
+                          
+                          <!-- Notification Preferences -->
+                          <div class="settings-card" style="margin-top: 2rem;">
+                              <h5>Notification Preferences</h5>
+                              <form>
+                                  <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="email-notifications" checked>
+                                      <label class="form-check-label" for="email-notifications">Email Notifications</label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="sms-notifications">
+                                      <label class="form-check-label" for="sms-notifications">SMS Notifications</label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="promo-notifications">
+                                      <label class="form-check-label" for="promo-notifications">Promotional Notifications</label>
+                                  </div>
+                                  <button class="btn btn-primary" style="margin-top: 1rem;">Save Preferences</button>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <!-- Password Settings -->
+                          <div class="settings-card">
+                              <h5>Password Settings</h5>
+                              <form>
+                                  <div class="form-group">
+                                      <label for="current-password">Current Password</label>
+                                      <input type="password" class="form-control" id="current-password">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="new-password">New Password</label>
+                                      <input type="password" class="form-control" id="new-password">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="confirm-password">Confirm New Password</label>
+                                      <input type="password" class="form-control" id="confirm-password">
+                                  </div>
+                                  <button class="btn btn-primary">Update Password</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+            
+          </div>
+        </div>
+        <br><br>
+            <div id="footer">
+                <div style="flex: 2;border-right: 1px dashed black;">
+                    <h3>About the Company</h3>
+                    <p>Our company, Vendora, is dedicated to connecting customers with a variety of trusted sellers. 
+                        In conjunction with this, Our platform allows clients to showcase their products and services, helping them reach a broader audience.
+                    </p>
+                </div>
+                
+                <div style="flex: 1;margin-left: 30px;border-right: 1px dashed black">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                        <li><a href="aboutus.html#jump1">Contact</a></li>
+                    </ul>
+                </div>
+                <div style="flex: 1;border-right: 1px dashed black;margin-left: 30px;">
+                    <h3>Contact Us</h3>
+                    <p>&#x1F310;:<a class="footer" href="home.html">www.Vendora.com</a></p>
+                    <p>&#9743;: <a href="tel:1(246)xxx-xxxx">x(xxx)xxx-xxxx</a></p>
+                    <p>&#9993;: <a href="mailto:Vendora@gmail.com">Vendora@gmail.com</a></p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="images/logo.png" alt="Company Logo" height="80">
+                </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

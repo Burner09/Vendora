@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="images/logosmall.png">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar" class="row">
+            <div class="col-md-2">
+                <a href="home.html">
+                    <img src="images/logoblk.png" alt="Business Logo" height="80"/>
+                </a>
+            </div>
+            <div class="menu col-md-8">
+                <a href="home.html">Home</a>
+                <a href="strategy.html">Strategy</a>
+                <a href="aboutUs.html">About</a>
+                
+                <a class="active" href="signup.html">Sign Up</a>
+            </div>
+            <div class="col-md-2">
+                <p style="margin-left: 5rem;">
+                    Business/Customer <a href ="profile.html"><img class ="img" src="images/blankuser.png"  width="50"></a>
+                </p>
+            </div>
+        </div>
+        <div id="bannersignUp">
+            <br><br>
+                <a class = "inactive" href="signUp.html">Customer Sign Up</a> 
+                <a class = "SUactive" href="signUpV.html">Vendor Sign Up</a>
+                <div id="line"></div>  
+        </div>
+        <div id="content">
+            <div id="SUform">
+                <form>
+                    <h2>Personal Identification</h2>
+                    <label for="fname">First name:</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" value="">
+                    <br><br>
+                    <label for="lname">Last name:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" value="">
+                    <br><br>
+                    <label for="proof_of_identity">Proof of Identity (e.g., Passport, Driver's License):</label>
+                    <br>
+                    <input type="text" id="proof_of_identity" name="proof_of_identity" value="">
+                    <br><br>
+                    <label for="country_of_birth">Country of Birth:</label>
+                    <br>
+                    <input type="text" id="country_of_birth" name="country_of_birth" value="">
+                    <br><br>
+                    <label for="dob">Date of Birth:</label>
+                    <br>
+                    <input type="date" id="dob" name="dob" value="">
+                    <br><br>
+                    <h2>Business Initialization</h2>
+                    <label for="business_name">Business Name:</label>
+                    <br>
+                    <input type="text" id="business_name" name="business_name" value="">
+                    <br><br>
+                    <label for="business_email">Business Email:</label>
+                    <br>
+                    <input type="email" id="business_email" name="business_email" value="">
+                    <br><br>
+                    <label for="business_phone">Telephone:</label>
+                    <br>
+                    <input type="tel" id="business_phone" name="business_phone" value="">
+                    <br><br>
+                    <label for="business_address1">Street Address Line 1:</label>
+                    <br>
+                    <input type="text" id="business_address1" name="business_address1" value="">
+                    <br><br>
+                    <label for="business_address2">Street Address Line 2:</label>
+                    <br>
+                    <input type="text" id="business_address2" name="business_address2" value="">
+                    <br><br>
+                    <label for="business_city">City:</label>
+                    <br>
+                    <input type="text" id="business_city" name="business_city" value="">
+                    <br><br>
+                    <label for="business_zip">Postal/Zip Code:</label>
+                    <br>
+                    <input type="text" id="business_zip" name="business_zip" value="">
+                    <br><br>
+                    <label for="business_country">Country:</label>
+                    <br>
+                    <input type="text" id="business_country" name="business_country" value="">
+                    <br><br>
+                    <label for="business_state">State/Province:</label>
+                    <br>
+                    <input type="text" id="business_state" name="business_state" value="">
+                    <br><br>
+                    <label for="business_type">Type of Business:</label>
+                    <br>
+                    <input type="text" id="business_type" name="business_type" value="">
+                    <br><br>
+                    <h2>Billing Information</h2>
+                    <label for="cc_number">Credit Card Number:</label>
+                    <br>
+                    <input type="text" id="cc_number" name="cc_number" value="">
+                    <br><br>
+                    <label for="cardholder_name">Card Holder Name:</label>
+                    <br>
+                    <input type="text" id="cardholder_name" name="cardholder_name" value="">
+                    <br><br>
+                    <label for="exp_date">Expiration Date:</label>
+                    <br>
+                    <input type="month" id="exp_date" name="exp_date" value="">
+                    <br><br>
+                    <input type="submit"></input>
+                    <input type="reset" value="Clear"></input>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div id="footer">
+            <div style="flex: 2;border-right: 1px dashed black;">
+                <h3>About the Company</h3>
+                <p>Our company, Vendora, is dedicated to connecting customers with a variety of trusted sellers. 
+                    In conjunction with this, Our platform allows clients to showcase their products and services, helping them reach a broader audience.
+                </p>
+            </div>
+            
+            <div style="flex: 1;margin-left: 30px;border-right: 1px dashed black">
+                <h3>Quick Links</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aboutus.html#jump1">Contact</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1;border-right: 1px dashed black;margin-left: 30px;">
+                <h3>Contact Us</h3>
+                <p>&#x1F310;:<a class="footer" href="home.html">www.Vendora.com</a></p>
+                <p>&#9743;: <a href="tel:1(246)xxx-xxxx">x(xxx)xxx-xxxx</a></p>
+                <p>&#9993;: <a href="mailto:Vendora@gmail.com">Vendora@gmail.com</a></p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+                <img src="images/logo.png" alt="Company Logo" height="80">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
